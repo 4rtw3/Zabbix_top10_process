@@ -1,0 +1,8 @@
+<service>
+  <id>zabbix_proc_mon</id>
+  <name>Zabbix Process Monitoring</name>
+  <description>Zabbix Process Monitoring</description>
+  <executable>powershell</executable>
+  <arguments>-ExecutionPolicy Bypass -File "C:\Program Files\Zabbix Agent\scripts\top10_cpu.ps1"</arguments>
+  <logpath>"C:\Program Files\Zabbix Agent\services\logs"</logpath>
+</service>
